@@ -22,9 +22,9 @@ bus_capacity = 21
 people_inbus= int (input("How many people are in the bus? "))
 empty_seats = bus_capacity - people_inbus
 
-if bus_capacity < people_inbus:
-  print ("ther  is room for more people")
-elif bus_capacity == people_inbus:
-  print("The bus is full")
+if empty_seats < people_inbus:
+  print (f"there  is room for more people, there is {empty_seats} left")
+elif empty_seats == people_inbus:
+  print(f"The bus is full, there is {empty_seats} left")
 else:
-  print("Too many people!!")
+  print(f"Too many people!!")
